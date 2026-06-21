@@ -1,0 +1,24 @@
+[package]
+name = "sw-audio-recording"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cpal = "0.17.1"
+ffmpeg-sidecar = "2.4.0"
+hound = "3.5.1"
+log = "0.4.29"
+qruhear = "0.1.1"
+
+ort = { version = "2.0.0-rc.12", features = ["coreml"] }
+ndarray = "0.16"
+realfft = "3"
+sha2 = "0.10"
+dirs = "6"
+anyhow = "1"
+reqwest = { version = "0.12", features = ["stream"] }
+futures-util = "0.3"
+tokio = { version = "1", features = ["rt", "macros", "fs", "io-util"] }
+crossbeam-channel = "0.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
