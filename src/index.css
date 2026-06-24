@@ -1,0 +1,335 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Besley";
+  src:
+    url("/fonts/besley-latin.woff2") format("woff2"),
+    url("/fonts/besley-latin-ext.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:
+    url("/fonts/figtree-latin.woff2") format("woff2"),
+    url("/fonts/figtree-latin-ext.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-insight-red: #d06b89;
+  --color-insight-orange: #d4a054;
+  --color-insight-green: #54b8a8;
+  --font-serif: "Besley", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Figtree", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --animate-pulse-dot: pulse-dot 2s ease-in-out infinite;
+  --animate-typing-dot: typing-dot 1.2s ease-in-out infinite;
+
+  --color-page: var(--st-page);
+  --color-panel: var(--st-panel);
+  --color-card: var(--st-card);
+  --color-field: var(--st-field);
+  --color-heading: var(--st-heading);
+  --color-body: var(--st-body);
+  --color-muted: var(--st-muted);
+  --color-faint: var(--st-faint);
+  --color-rule: var(--st-rule);
+  --color-rule-strong: var(--st-rule-strong);
+  --color-accent: var(--st-accent);
+  --color-accent-hover: var(--st-accent-hover);
+  --color-accent-fg: var(--st-accent-fg);
+  --color-sidebar-active: var(--st-sidebar-active);
+  --color-danger: var(--st-danger);
+  --color-danger-bg: var(--st-danger-bg);
+  --color-success: var(--st-success);
+  --color-success-bg: var(--st-success-bg);
+  --color-warn: var(--st-warn);
+  --color-warn-bg: var(--st-warn-bg);
+  --color-dim-overlay: var(--st-overlay);
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  60%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes onboarding-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    stroke-width: 2;
+  }
+  50% {
+    opacity: 1;
+    stroke-width: 2.5;
+  }
+}
+
+@keyframes onboarding-pulse-outer {
+  0% {
+    opacity: 0.5;
+    stroke-width: 1.5;
+  }
+  50% {
+    opacity: 0;
+    stroke-width: 0.5;
+    stroke-dashoffset: 4;
+  }
+  100% {
+    opacity: 0.5;
+    stroke-width: 1.5;
+  }
+}
+
+@keyframes onboarding-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 12px var(--st-accent-glow, rgba(234, 88, 12, 0.1)),
+      0 0 4px var(--st-accent-glow, rgba(234, 88, 12, 0.08));
+    border-color: rgba(234, 88, 12, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 20px var(--st-accent-glow, rgba(234, 88, 12, 0.2)),
+      0 0 8px var(--st-accent-glow, rgba(234, 88, 12, 0.15));
+    border-color: rgba(234, 88, 12, 0.45);
+  }
+}
+
+.settings-surface
+  :where(
+    [class~="rounded"],
+    [class*="rounded-sm"],
+    [class*="rounded-md"],
+    [class*="rounded-lg"],
+    [class*="rounded-xl"],
+    [class*="rounded-2xl"],
+    [class*="rounded-3xl"],
+    [class*="rounded-t"],
+    [class*="rounded-b"],
+    [class*="rounded-l"],
+    [class*="rounded-r"]
+  ) {
+  border-radius: 0 !important;
+}
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --background-transparent: transparent;
+    --text-color: #eef1ff;
+    --text-muted: rgba(226, 233, 255, 0.68);
+    --text-dimmed: rgba(198, 209, 247, 0.48);
+    --border-color: rgba(162, 183, 255, 0.26);
+    --border-subtle: rgba(162, 183, 255, 0.14);
+
+    --glass-bg: rgba(18, 24, 48, 0.72);
+    --glass-bg-heavy: rgba(12, 17, 36, 0.86);
+    --glass-bg-light: rgba(29, 36, 70, 0.52);
+    --glass-bg-input: rgba(27, 35, 72, 0.5);
+
+    --button-bg: rgba(45, 58, 115, 0.48);
+    --button-border: rgba(143, 167, 255, 0.24);
+    --hover-bg: rgba(120, 148, 255, 0.19);
+    --hover-bg-strong: rgba(120, 148, 255, 0.27);
+
+    --key-bg: rgba(132, 159, 255, 0.2);
+    --key-text: rgba(232, 238, 255, 0.72);
+
+    --accent-red: #d54868;
+    --accent-red-hover: #b73d59;
+    --accent-blue: #3b82f6;
+    --accent-green: #38c7a3;
+    --accent-orange: #68a6ff;
+
+    --scrollbar-track: rgba(24, 33, 67, 0.45);
+    --scrollbar-thumb: rgba(139, 163, 255, 0.36);
+    --scrollbar-thumb-hover: rgba(163, 183, 255, 0.52);
+
+    --glass-outline: 0.5px solid rgba(162, 183, 255, 0.32);
+    --glass-outline-subtle: 0.5px solid rgba(162, 183, 255, 0.2);
+    --glass-radius: 12px;
+    --glass-radius-pill: 22px;
+    --glass-blur: 20px;
+    --glass-blur-subtle: 8px;
+
+    /* Settings theme — Light (warm beige from landing page light-blinds) */
+    --st-page: #faf6f3;
+    --st-panel: #f5f0ec;
+    --st-card: #f5f0ec;
+    --st-field: #ffffff;
+    --st-heading: #1c1917;
+    --st-body: #44403c;
+    --st-muted: #78716c;
+    --st-faint: #918a85;
+    --st-rule: rgba(0, 0, 0, 0.08);
+    --st-rule-strong: rgba(0, 0, 0, 0.15);
+    --st-accent: #c2410c;
+    --st-accent-hover: #9a3412;
+    --st-accent-fg: #ffffff;
+    --st-sidebar-active: rgba(0, 0, 0, 0.06);
+    --st-danger: #dc2626;
+    --st-danger-bg: rgba(220, 38, 38, 0.08);
+    --st-success: #15803d;
+    --st-success-bg: rgba(22, 163, 74, 0.08);
+    --st-warn: #b45309;
+    --st-warn-bg: rgba(217, 119, 6, 0.08);
+    --st-overlay: rgba(0, 0, 0, 0.4);
+    --st-accent-glow: rgba(194, 65, 12, 0.12);
+
+    font-family:
+      "Figtree",
+      "Inter",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [data-theme="dark"] {
+    --st-page: #000000;
+    --st-panel: #0a0a0a;
+    --st-card: #111111;
+    --st-field: #161616;
+    --st-heading: #ffffff;
+    --st-body: #e5e5e5;
+    --st-muted: #7e7e7e;
+    --st-faint: #555555;
+    --st-rule: rgba(255, 255, 255, 0.1);
+    --st-rule-strong: rgba(255, 255, 255, 0.2);
+    --st-accent: #ea580c;
+    --st-accent-hover: #f97316;
+    --st-accent-fg: #ffffff;
+    --st-sidebar-active: rgba(255, 255, 255, 0.08);
+    --st-danger: #ef4444;
+    --st-danger-bg: rgba(239, 68, 68, 0.12);
+    --st-success: #22c55e;
+    --st-success-bg: rgba(34, 197, 94, 0.12);
+    --st-warn: #f59e0b;
+    --st-warn-bg: rgba(245, 158, 11, 0.12);
+    --st-overlay: rgba(0, 0, 0, 0.65);
+    --st-accent-glow: rgba(234, 88, 12, 0.18);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  html[data-theme] {
+    background: var(--st-panel);
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+
+  .settings-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .settings-scroll::-webkit-scrollbar-thumb {
+    background: var(--st-rule-strong);
+    border-radius: 3px;
+  }
+
+  .settings-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--st-muted);
+  }
+}
+
+.plain-text-editor {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--st-rule-strong);
+  background: var(--st-field);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--st-heading);
+  outline: none;
+  transition: border-color 0.15s;
+  cursor: text;
+}
+
+.plain-text-editor:hover {
+  border-color: var(--st-accent);
+}
+
+.plain-text-editor:focus {
+  border-color: var(--st-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--st-accent) 15%, transparent);
+}
+
+.plain-text-editor p {
+  margin: 0;
+}
+
+.plain-text-editor p + p {
+  margin-top: 0.5em;
+}
+
+.plain-text-editor p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: var(--st-faint);
+  pointer-events: none;
+  float: left;
+  height: 0;
+}
+
+.tiptap:focus {
+  outline: none;
+}
