@@ -1,0 +1,13 @@
+name: "StageWhisper Lite CodeQL config"
+
+queries:
+  - uses: security-and-quality
+
+paths-ignore:
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+  - "**/target/**"
+  - "**/gen/**"
+  - "**/.vite/**"
+  - "**/coverage/**"
