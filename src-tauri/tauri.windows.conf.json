@@ -1,0 +1,17 @@
+{
+  "bundle": {
+    "targets": ["nsis"],
+    "resources": {
+      "sidecar/llama/*": "llama"
+    },
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      },
+      "nsis": {
+        "installMode": "currentUser",
+        "installerIcon": "icons/icon.ico"
+      }
+    }
+  }
+}
