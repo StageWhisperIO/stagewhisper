@@ -1,0 +1,61 @@
+{
+  "units": {
+    "bytes": "{{value}} B",
+    "kb": "{{value}} KB",
+    "mb": "{{value}} MB",
+    "gb": "{{value}} GB"
+  },
+  "speech": {
+    "title": "Model",
+    "description": "Transkrypcja na urządzeniu. Dźwięk nigdy nie opuszcza twojego komputera.",
+    "ready": "Model gotowy",
+    "readyDescription": "Transkrypcja na urządzeniu jest włączona. Dźwięk zostaje lokalnie.",
+    "downloading": "Pobieranie modelu…",
+    "progress": "{{downloaded}} / {{total}} · Plik {{current}} z {{files}}",
+    "missing": "Model nie jest pobrany",
+    "missingDescription": "Pobierz model transkrypcji, żeby transkrybować lokalnie na urządzeniu (ok. 1,2 GB).",
+    "download": "Pobierz model",
+    "storage": "Miejsce na dysku",
+    "storageDescription": "Model transkrypcji zajmuje łącznie ok. 1,2 GB."
+  },
+  "llm": {
+    "title": "Lokalny model AI",
+    "description": "Uruchom asystenta w całości na tym urządzeniu. Działa offline, a twoje dane nigdy nie opuszczają komputera.",
+    "sizeHint": "Większe modele zwykle odpowiadają lepiej, ale zajmują więcej pamięci i dłużej się pobierają.",
+    "downloading": "Pobieranie…",
+    "progressDetail": "{{percent}} · plik {{completed}}/{{files}} · {{file}}",
+    "custom": {
+      "title": "Własny model z Hugging Face",
+      "description": "Pobierz dowolny model GGUF z Hugging Face, podając identyfikator repozytorium. Do repozytoriów prywatnych lub z ograniczonym dostępem dodaj token dostępu.",
+      "repoPlaceholder": "np. unsloth/Qwen3-4B-Instruct-GGUF",
+      "tokenPlaceholder": "Token dostępu Hugging Face (opcjonalnie)",
+      "download": "Pobierz własny model",
+      "useCached": "Masz go już? Użyj kopii z pamięci podręcznej",
+      "installed": "Zainstalowany · w użyciu",
+      "selected": "Wybrany · pobierz, żeby używać"
+    },
+    "folder": {
+      "title": "Użyj modelu z komputera",
+      "description": "Masz już pliki modelu na dysku, z huggingface-cli, LM Studio albo wcześniejszego pobierania? Wskaż StageWhisper ich folder.",
+      "choose": "Wybierz folder…",
+      "hint": "Wybierz folder z plikiem .gguf. Modele z Ollamy tu nie zadziałają, bo Ollama trzyma je we własnym formacie."
+    },
+    "footer": "Modele lokalne działają w całości na twoim urządzeniu.",
+    "row": {
+      "recommended": "Polecany",
+      "ram": "ok. {{size}} GB RAM",
+      "installed": "Zainstalowany",
+      "download": "Pobierz"
+    }
+  },
+  "errors": {
+    "downloadFailed": "Nie udało się pobrać modelu. Sprawdź połączenie i spróbuj ponownie.",
+    "deleteFailed": "Nie udało się usunąć modelu. Spróbuj ponownie.",
+    "selectFailed": "Nie udało się przełączyć na ten model. Spróbuj ponownie.",
+    "primaryFailed": "Nie udało się zmienić domyślnego asystenta. Spróbuj ponownie.",
+    "folderFailed": "Nie udało się użyć tego folderu. Upewnij się, że zawiera obsługiwany plik modelu, i spróbuj ponownie.",
+    "cacheMissing": "Nie znaleziono {{repoId}} w pamięci podręcznej Hugging Face.",
+    "cacheFailed": "Nie udało się użyć modelu z pamięci podręcznej. Spróbuj pobrać go ponownie.",
+    "speechDownloadFailed": "Nie udało się pobrać modelu mowy. Sprawdź połączenie i spróbuj ponownie."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "language": {
+    "label": "Język",
+    "description": "Wybierz język menu i komunikatów StageWhisper. Wskazówki i podsumowania rozmów są w języku, w którym toczy się rozmowa.",
+    "system": "Jak w systemie",
+    "en": "English",
+    "pl": "Polski"
+  },
+  "actions": {
+    "cancel": "Anuluj",
+    "close": "Zamknij",
+    "save": "Zapisz",
+    "retry": "Spróbuj ponownie",
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "delete": "Usuń",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "done": "Gotowe",
+    "continue": "Kontynuuj"
+  },
+  "status": {
+    "loading": "Wczytywanie…",
+    "saving": "Zapisywanie…",
+    "error": "Coś poszło nie tak"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "controlBar": {
+    "listen": "Listen",
+    "stop": "Stop",
+    "downloadModel": "Download model",
+    "connectAi": "Connect AI",
+    "toggleVisibility": "On/Off-screen",
+    "openSettings": "Open settings"
+  },
+  "panel": {
+    "audioDropped": "Some audio was not captured while the model was loading",
+    "transcript": "Transcript",
+    "copy": "Copy to clipboard",
+    "idle": "Press Listen to start capturing audio",
+    "waiting": "Waiting for audio…"
+  },
+  "speakers": {
+    "you": "You",
+    "others": "Others"
+  },
+  "errors": {
+    "startFailed": "Couldn't start the session. Try again.",
+    "localProcessingFailed": "Couldn't start local processing. Try again."
+  }
+}

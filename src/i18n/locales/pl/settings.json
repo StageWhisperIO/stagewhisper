@@ -1,0 +1,81 @@
+{
+  "window": {
+    "title": "Ustawienia",
+    "nav": {
+      "engine": "Silnik",
+      "permissions": "Uprawnienia",
+      "library": "Biblioteka",
+      "about": "O aplikacji"
+    },
+    "theme": {
+      "label": "Motyw",
+      "switchToLight": "Przełącz na jasny",
+      "switchToDark": "Przełącz na ciemny",
+      "light": "Jasny",
+      "dark": "Ciemny"
+    },
+    "quit": "Zamknij aplikację"
+  },
+  "about": {
+    "title": "O aplikacji",
+    "intro": "Większość notatników AI czeka, aż rozmowa się skończy, a potem przysyła ci podsumowanie tego, co już się wydarzyło, napisane przez ogólny model w cudzej chmurze.",
+    "pitch": "StageWhisper przekazuje transkrypcję twojemu własnemu asystentowi. OpenClaw, Hermes, cokolwiek już masz. Podsumowanie i listę zadań pisze ten, który zna twoją pracę, a nie ogólny model, który nic o tobie nie wie.",
+    "howItWorks": {
+      "title": "Jak to działa",
+      "body": "Transkrypcja powstaje tutaj, na tym urządzeniu, w trakcie rozmowy. Gdy rozmowa się skończy, pełna transkrypcja trafia jednorazowo do twojego AI przez skonfigurowany przekaźnik i wraca jako podsumowanie w Markdownie z sekcją zadań do wykonania. Każda sesja jest zapisywana w lokalnej, zaszyfrowanej bibliotece, więc możesz ją ponownie otworzyć i dalej o niej rozmawiać."
+    },
+    "ownership": {
+      "title": "Twoje, nie wynajęte",
+      "body": "Bez konta, bez subskrypcji, o której anulowaniu łatwo zapomnieć, bez serwera, który po cichu nalicza ci opłaty za tokeny. StageWhisper to nakładka na inteligencję, którą już masz, a nie kolejna aplikacja, która po cichu wysyła dane producentowi. Kod źródłowy jest publiczny, więc możesz sprawdzić, co dokładnie robi, zamiast ufać stronie o prywatności."
+    },
+    "privacy": {
+      "title": "Prywatność",
+      "body": "Dźwięk nigdy nie opuszcza tego komputera, a samo StageWhisper nie ma serwera ani śledzenia użycia. Transkrypcja trafia tylko do skonfigurowanego przekaźnika: jeśli wskażesz asystenta działającego na tym komputerze, zostaje lokalnie; jeśli zdalny host, transkrypcja trafia właśnie tam, więc wybieraj przekaźnik z rozwagą."
+    },
+    "version": "Wersja {{version}}"
+  },
+  "permissions": {
+    "title": "Uprawnienia",
+    "description": "Uprawnienia, z których StageWhisper korzysta w systemie {{platform}}.",
+    "status": {
+      "granted": "Przyznane",
+      "denied": "Odmówiono",
+      "undetermined": "Nie zapytano",
+      "unsupported": "Niedostępne"
+    },
+    "systemAudio": {
+      "title": "Nagrywanie dźwięku systemowego",
+      "description": "Potrzebne, żeby słyszeć drugą stronę rozmowy. StageWhisper nigdy nie widzi twojego ekranu.",
+      "enable": "Włącz"
+    },
+    "openSettings_mac": "Otwórz Ustawienia systemowe",
+    "openSettings_windows": "Otwórz Ustawienia systemu Windows",
+    "microphone": {
+      "title": "Nagrywaj mój mikrofon",
+      "description_mac": "Opcjonalne. Twój głos jest transkrybowany na urządzeniu i oznaczany jako „Ty” w transkrypcji i podsumowaniu. Dźwięk zostaje na twoim Macu; do asystenta trafia tylko transkrypcja, po rozmowie.",
+      "description_windows": "Opcjonalne. Twój głos jest transkrybowany na urządzeniu i oznaczany jako „Ty” w transkrypcji i podsumowaniu. Dźwięk zostaje na tym komputerze; do asystenta trafia tylko transkrypcja, po rozmowie.",
+      "denied_mac": "Odmówiono dostępu do mikrofonu. Otwórz Ustawienia systemowe, aby go przyznać.",
+      "denied_windows": "Odmówiono dostępu do mikrofonu. Otwórz Ustawienia systemu Windows, aby go przyznać."
+    }
+  },
+  "engine": {
+    "title": "Silnik",
+    "description": "To, co napędza twoje rozmowy. Skonfiguruj zamianę mowy na tekst, a potem wybierz, jak StageWhisper ma odpowiadać.",
+    "speech": {
+      "title": "Mowa na tekst",
+      "subtitle": "Parakeet działa na tym urządzeniu i jest zawsze wymagany. Dźwięk nigdy nie opuszcza twojego komputera."
+    },
+    "reasoning": {
+      "title": "Rozumowanie",
+      "subtitle": "Tworzy podsumowania i odpowiada w trakcie rozmów. Wybierz asystenta albo model lokalny."
+    },
+    "responder": {
+      "title": "Które AI odpowiada",
+      "description": "To, co tu wybierzesz, obsługuje twoje rozmowy. Możesz to zmienić w każdej chwili.",
+      "assistant": "Asystent",
+      "local": "Model lokalny"
+    },
+    "connected": "Połączono",
+    "ready": "Gotowy"
+  }
+}
