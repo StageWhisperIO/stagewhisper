@@ -1,0 +1,47 @@
+{
+  "status": {
+    "notesReady": "Notatki gotowe",
+    "summarizing": "Podsumowuję…",
+    "notesFailed": "Błąd notatek",
+    "noNotes": "Brak notatek",
+    "transcriptOnly": "Tylko transkrypcja"
+  },
+  "list": {
+    "title": "Biblioteka",
+    "description": "Twoje poprzednie sesje. Transkrypcje i notatki są zaszyfrowane i przechowywane na tym urządzeniu.",
+    "refresh": "Odśwież",
+    "empty": "Nie masz jeszcze żadnych sesji. Zakończ rozmowę, aby zapisać transkrypcję i podsumowanie.",
+    "confirmDeleteHint": "Kliknij kosz ponownie, aby trwale usunąć",
+    "confirmDeleteTitle": "Kliknij ponownie, aby trwale usunąć",
+    "confirmDeleteLabel": "Potwierdź usunięcie sesji",
+    "delete": "Usuń sesję"
+  },
+  "detail": {
+    "back": "← Biblioteka",
+    "untitled": "Sesja",
+    "rename": "Zmień nazwę sesji",
+    "renameSpeaker": "Zmień nazwę rozmówcy",
+    "tabs": {
+      "summary": "Podsumowanie",
+      "transcript": "Transkrypcja"
+    },
+    "messageFailed": "Nie udało się wysłać tej wiadomości.",
+    "replyFailed": "Nie udało się wygenerować tej odpowiedzi.",
+    "retry": "Ponów",
+    "writingSummary": "Asystent pisze podsumowanie",
+    "summaryFailed": "Nie udało się wygenerować podsumowania.",
+    "thinking": "Myślę…",
+    "placeholder": {
+      "ready": "Dopracuj listę zadań…",
+      "failed": "Czat niedostępny, nie udało się utworzyć podsumowania.",
+      "pending": "Czat odblokuje się, gdy podsumowanie będzie gotowe…"
+    },
+    "send": "Wyślij",
+    "noTranscript": "Brak transkrypcji.",
+    "notFound": "Nie znaleziono sesji."
+  },
+  "errors": {
+    "loadChatFailed": "Nie udało się wczytać czatu. Spróbuj ponownie.",
+    "sendFailed": "Nie udało się wysłać wiadomości. Spróbuj ponownie."
+  }
+}

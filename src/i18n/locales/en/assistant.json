@@ -1,0 +1,73 @@
+{
+  "copy": "Copy to clipboard",
+  "loading": "Loading...",
+  "providers": {
+    "hermes": {
+      "installNote": "Replace <hermes-venv> with the environment your Hermes gateway runs from. It has to be that same one, or the gateway can't load the plugin.",
+      "pairCodeNote": "Setting up a whole team on one Linux host? Run sudo <hermes-venv>/bin/stagewhisper-hermes provision <name> instead. It gives each person their own assistant and their own pairing code."
+    }
+  },
+  "connected": {
+    "status": "Connected",
+    "test": "Test",
+    "testing": "Testing...",
+    "replied": "Assistant replied",
+    "disconnect": "Disconnect"
+  },
+  "approval": {
+    "unreachableBody": "Couldn't reach your assistant. Make sure it's running, and if it's on another machine, that you can reach it at that address. Then check again.",
+    "approveBody": "Approve this device once on your assistant host, then confirm below. Until then it can't respond, so recording stays disabled.",
+    "checkingConnection": "Checking the connection...",
+    "replied": "Your {{provider}} assistant replied. If it asks you to approve this device, do that on the host, then confirm below:",
+    "checkingWith": "Checking with your {{provider}} assistant...",
+    "unreachable": "Can't reach your assistant",
+    "needed": "Approval needed",
+    "confirm": "I've approved this device",
+    "verifying": "Verifying...",
+    "check": "Check connection",
+    "checking": "Checking...",
+    "startOver": "Start over"
+  },
+  "setup": {
+    "where": "Where does your assistant run?",
+    "local_mac": "On this Mac",
+    "local_windows": "On this computer",
+    "remote": "On a VPS / remote host",
+    "localHint_mac": "The assistant runs on this Mac. Paste the pairing code and it connects automatically.",
+    "localHint_windows": "The assistant runs on this computer. Paste the pairing code and it connects automatically.",
+    "remoteHint": "The assistant runs on another machine you reach over a private network (for example Tailscale). Point StageWhisper at that address and paste the pairing code.",
+    "install": "1. Install the StageWhisper plugin on your {{provider}} host:",
+    "pairCode": "2. Generate a pairing code on your {{provider}} host:",
+    "pairCodeRemote_mac": "2. Generate a pairing code on the host, pointing at the address this Mac reaches it on:",
+    "pairCodeRemote_windows": "2. Generate a pairing code on the host, pointing at the address this computer reaches it on:",
+    "tailscaleHint": "Use your host's Tailscale address (run <code>tailscale serve status</code> on it), not localhost. The default code points at 127.0.0.1, which only works on the same machine.",
+    "pasteCode": "3. Paste the pairing code it prints",
+    "pasteCodeHint": "The command outputs a stagewhisper-pair code. Copy it and paste it here.",
+    "pair": "Pair",
+    "pairing": "Pairing...",
+    "paired": "Paired and reachable",
+    "afterPairing": "After pairing, your {{provider}} assistant approves this device once before it starts responding. We'll walk you through that next."
+  },
+  "manual": {
+    "showSetup": "Enter relay URL and token manually",
+    "hideSetup": "Hide manual setup",
+    "relayUrl": "Relay URL",
+    "relayUrlHint_mac": "HTTP(S) endpoint exposed by your assistant on this Mac.",
+    "relayUrlHint_windows": "HTTP(S) endpoint exposed by your assistant on this computer.",
+    "relayUrlRemoteHint_mac": "The address this Mac reaches your assistant on, e.g. your Tailscale host.",
+    "relayUrlRemoteHint_windows": "The address this computer reaches your assistant on, e.g. your Tailscale host.",
+    "token": "Bearer token",
+    "tokenHint": "The token printed inside the pairing code.",
+    "tokenSavedPlaceholder": "saved, paste a new token to replace it",
+    "tokenPlaceholder": "paste token",
+    "revealToken": "Reveal",
+    "hideToken": "Hide"
+  },
+  "errors": {
+    "probeFailed": "Couldn't reach your assistant. Check that it's running and try again.",
+    "approveFailed": "Couldn't confirm the approval. Make sure you approved this device on the host, then try again.",
+    "pairFailed": "Couldn't pair with that code. Check the code and try again.",
+    "saveFailed": "Couldn't save those settings. Check the URL and token, then try again.",
+    "disconnectFailed": "Couldn't disconnect. Try again."
+  }
+}

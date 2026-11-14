@@ -1,0 +1,73 @@
+{
+  "copy": "Kopiuj do schowka",
+  "loading": "Wczytywanie…",
+  "providers": {
+    "hermes": {
+      "installNote": "Zastąp <hermes-venv> środowiskiem, z którego działa brama Hermes. Musi to być dokładnie to samo środowisko, inaczej brama nie wczyta wtyczki.",
+      "pairCodeNote": "Konfigurujesz cały zespół na jednym hoście z Linuksem? Zamiast tego uruchom sudo <hermes-venv>/bin/stagewhisper-hermes provision <name>. Każda osoba dostanie własnego asystenta i własny kod parowania."
+    }
+  },
+  "connected": {
+    "status": "Połączono",
+    "test": "Testuj",
+    "testing": "Testuję…",
+    "replied": "Asystent odpowiedział",
+    "disconnect": "Rozłącz"
+  },
+  "approval": {
+    "unreachableBody": "Nie udało się połączyć z asystentem. Upewnij się, że działa, a jeśli jest na innym komputerze, że da się z nim połączyć pod tym adresem. Potem sprawdź ponownie.",
+    "approveBody": "Zatwierdź to urządzenie raz na hoście asystenta, a potem potwierdź poniżej. Do tego czasu asystent nie może odpowiadać, więc nagrywanie pozostaje wyłączone.",
+    "checkingConnection": "Sprawdzam połączenie…",
+    "replied": "Twój asystent {{provider}} odpowiedział. Jeśli prosi o zatwierdzenie tego urządzenia, zrób to na hoście, a potem potwierdź poniżej:",
+    "checkingWith": "Sprawdzam połączenie z asystentem {{provider}}…",
+    "unreachable": "Brak połączenia z asystentem",
+    "needed": "Wymagane zatwierdzenie",
+    "confirm": "Urządzenie zatwierdzone",
+    "verifying": "Weryfikuję…",
+    "check": "Sprawdź połączenie",
+    "checking": "Sprawdzam…",
+    "startOver": "Zacznij od nowa"
+  },
+  "setup": {
+    "where": "Gdzie działa twój asystent?",
+    "local_mac": "Na tym Macu",
+    "local_windows": "Na tym komputerze",
+    "remote": "Na VPS / zdalnym hoście",
+    "localHint_mac": "Asystent działa na tym Macu. Wklej kod parowania, a połączenie nawiąże się automatycznie.",
+    "localHint_windows": "Asystent działa na tym komputerze. Wklej kod parowania, a połączenie nawiąże się automatycznie.",
+    "remoteHint": "Asystent działa na innym komputerze, z którym łączysz się przez sieć prywatną (na przykład Tailscale). Wskaż StageWhisper ten adres i wklej kod parowania.",
+    "install": "1. Zainstaluj wtyczkę StageWhisper na hoście {{provider}}:",
+    "pairCode": "2. Wygeneruj kod parowania na hoście {{provider}}:",
+    "pairCodeRemote_mac": "2. Wygeneruj kod parowania na hoście, wskazując adres, pod którym ten Mac się z nim łączy:",
+    "pairCodeRemote_windows": "2. Wygeneruj kod parowania na hoście, wskazując adres, pod którym ten komputer się z nim łączy:",
+    "tailscaleHint": "Użyj adresu Tailscale hosta (uruchom na nim <code>tailscale serve status</code>), a nie localhost. Domyślny kod wskazuje 127.0.0.1, co działa tylko na tym samym komputerze.",
+    "pasteCode": "3. Wklej kod parowania, który wypisze polecenie",
+    "pasteCodeHint": "Polecenie wypisze kod stagewhisper-pair. Skopiuj go i wklej tutaj.",
+    "pair": "Sparuj",
+    "pairing": "Parowanie…",
+    "paired": "Sparowano, asystent jest dostępny",
+    "afterPairing": "Po sparowaniu twój asystent {{provider}} musi raz zatwierdzić to urządzenie, zanim zacznie odpowiadać. Przeprowadzimy cię przez to w następnym kroku."
+  },
+  "manual": {
+    "showSetup": "Wpisz adres przekaźnika i token ręcznie",
+    "hideSetup": "Ukryj ręczną konfigurację",
+    "relayUrl": "Adres URL przekaźnika",
+    "relayUrlHint_mac": "Endpoint HTTP(S) udostępniany przez twojego asystenta na tym Macu.",
+    "relayUrlHint_windows": "Endpoint HTTP(S) udostępniany przez twojego asystenta na tym komputerze.",
+    "relayUrlRemoteHint_mac": "Adres, pod którym ten Mac łączy się z asystentem, np. host Tailscale.",
+    "relayUrlRemoteHint_windows": "Adres, pod którym ten komputer łączy się z asystentem, np. host Tailscale.",
+    "token": "Token Bearer",
+    "tokenHint": "Token zapisany w kodzie parowania.",
+    "tokenSavedPlaceholder": "zapisany, wklej nowy token, aby go zastąpić",
+    "tokenPlaceholder": "wklej token",
+    "revealToken": "Pokaż",
+    "hideToken": "Ukryj"
+  },
+  "errors": {
+    "probeFailed": "Nie udało się połączyć z asystentem. Sprawdź, czy działa, i spróbuj ponownie.",
+    "approveFailed": "Nie udało się potwierdzić zatwierdzenia. Upewnij się, że to urządzenie zostało zatwierdzone na hoście, i spróbuj ponownie.",
+    "pairFailed": "Nie udało się sparować za pomocą tego kodu. Sprawdź kod i spróbuj ponownie.",
+    "saveFailed": "Nie udało się zapisać ustawień. Sprawdź adres URL i token, a potem spróbuj ponownie.",
+    "disconnectFailed": "Nie udało się rozłączyć. Spróbuj ponownie."
+  }
+}

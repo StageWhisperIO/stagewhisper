@@ -1,0 +1,81 @@
+{
+  "window": {
+    "title": "Settings",
+    "nav": {
+      "engine": "Engine",
+      "permissions": "Permissions",
+      "library": "Library",
+      "about": "About"
+    },
+    "theme": {
+      "label": "Theme",
+      "switchToLight": "Switch to light",
+      "switchToDark": "Switch to dark",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "quit": "Quit"
+  },
+  "about": {
+    "title": "About",
+    "intro": "Most AI notetakers wait until the call is over, then send you a summary of what already happened, written by a generic model in someone else's cloud.",
+    "pitch": "StageWhisper hands the transcript to your own assistant instead. OpenClaw, Hermes, whatever you already run. The one that knows your work writes the summary and the action items, not a generic model you have never trained.",
+    "howItWorks": {
+      "title": "How it works",
+      "body": "Transcription runs here, on this device, while you talk. When the call ends the full transcript goes once to your own AI over the relay you configured and comes back as a markdown summary with an action items section. Every session is saved to a local encrypted library, so you can reopen one and keep chatting it through."
+    },
+    "ownership": {
+      "title": "Yours, not rented",
+      "body": "No account, no subscription to forget to cancel, no backend quietly billing you for tokens. StageWhisper is a surface for the intelligence you already trained, not another thing phoning home. The source is public, so you can read exactly what it does instead of trusting a privacy page."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "body": "Your audio never leaves this machine, and StageWhisper itself has no backend or usage tracking. The transcript is sent only to the relay you configure: point it at an assistant running on this machine and it stays local; point it at a remote host and the transcript travels there, so choose your relay accordingly."
+    },
+    "version": "Version {{version}}"
+  },
+  "permissions": {
+    "title": "Permissions",
+    "description": "Permissions StageWhisper uses on {{platform}}.",
+    "status": {
+      "granted": "Granted",
+      "denied": "Denied",
+      "undetermined": "Not requested",
+      "unsupported": "Unavailable"
+    },
+    "systemAudio": {
+      "title": "System Audio Recording",
+      "description": "Required to hear the other side of your calls. StageWhisper never sees your screen.",
+      "enable": "Enable"
+    },
+    "openSettings_mac": "Open System Settings",
+    "openSettings_windows": "Open Windows Settings",
+    "microphone": {
+      "title": "Capture my microphone",
+      "description_mac": "Optional. Transcribe your own voice on-device and label it “You” in the transcript and summary. The audio stays on your Mac; only the transcript reaches your assistant, after the call.",
+      "description_windows": "Optional. Transcribe your own voice on-device and label it “You” in the transcript and summary. The audio stays on this computer; only the transcript reaches your assistant, after the call.",
+      "denied_mac": "Microphone access denied. Open System Settings to grant it.",
+      "denied_windows": "Microphone access denied. Open Windows Settings to grant it."
+    }
+  },
+  "engine": {
+    "title": "Engine",
+    "description": "The pipeline behind your calls. Set up speech to text, then choose how StageWhisper answers.",
+    "speech": {
+      "title": "Speech to text",
+      "subtitle": "Parakeet runs on this device and is always required. Audio never leaves your machine."
+    },
+    "reasoning": {
+      "title": "Reasoning",
+      "subtitle": "Handles summaries and answers during calls. Choose an assistant or a local model."
+    },
+    "responder": {
+      "title": "Which AI answers",
+      "description": "Whichever you pick here runs your calls. Switch anytime.",
+      "assistant": "Assistant",
+      "local": "Local model"
+    },
+    "connected": "Connected",
+    "ready": "Ready"
+  }
+}
