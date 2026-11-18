@@ -1,0 +1,61 @@
+{
+  "units": {
+    "bytes": "{{value}} B",
+    "kb": "{{value}} KB",
+    "mb": "{{value}} MB",
+    "gb": "{{value}} GB"
+  },
+  "speech": {
+    "title": "Model",
+    "description": "On-device transcription. Audio never leaves your machine.",
+    "ready": "Model ready",
+    "readyDescription": "On-device transcription is active. Audio stays local.",
+    "downloading": "Downloading model…",
+    "progress": "{{downloaded}} / {{total}} · File {{current}} of {{files}}",
+    "missing": "Model not downloaded",
+    "missingDescription": "Download the on-device transcription model to start transcribing locally (~1.2 GB).",
+    "download": "Download model",
+    "storage": "Storage",
+    "storageDescription": "~1.2 GB total for the transcription model."
+  },
+  "llm": {
+    "title": "Local AI model",
+    "description": "Run an assistant entirely on this device. It works offline, and your data never leaves the machine.",
+    "sizeHint": "Bigger models tend to give better answers, but use more memory and take longer to download.",
+    "downloading": "Downloading…",
+    "progressDetail": "{{percent}} · file {{completed}}/{{files}} · {{file}}",
+    "custom": {
+      "title": "Custom Hugging Face model",
+      "description": "Download any GGUF model from Hugging Face by repo id. Add an access token for gated or private repos.",
+      "repoPlaceholder": "e.g. unsloth/Qwen3-4B-Instruct-GGUF",
+      "tokenPlaceholder": "Hugging Face access token (optional)",
+      "download": "Download custom model",
+      "useCached": "Already downloaded it? Use the cached copy",
+      "installed": "Installed · in use",
+      "selected": "Selected · download to use"
+    },
+    "folder": {
+      "title": "Use a model from your computer",
+      "description": "Already have model files on disk, from huggingface-cli, LM Studio, or an earlier download? Point StageWhisper at the folder.",
+      "choose": "Choose a folder…",
+      "hint": "Pick a folder with a .gguf file inside. Ollama models won't work here, since Ollama keeps them in its own format."
+    },
+    "footer": "Local models run entirely on your device.",
+    "row": {
+      "recommended": "Recommended",
+      "ram": "~{{size}} GB RAM",
+      "installed": "Installed",
+      "download": "Download"
+    }
+  },
+  "errors": {
+    "downloadFailed": "Couldn't download the model. Check your connection and try again.",
+    "deleteFailed": "Couldn't delete the model. Try again.",
+    "selectFailed": "Couldn't switch to that model. Try again.",
+    "primaryFailed": "Couldn't switch your default assistant. Try again.",
+    "folderFailed": "Couldn't use that folder. Make sure it contains a supported model file and try again.",
+    "cacheMissing": "Couldn't find {{repoId}} in your Hugging Face cache.",
+    "cacheFailed": "Couldn't use the cached model. Try downloading it again.",
+    "speechDownloadFailed": "Couldn't download the speech model. Check your connection and try again."
+  }
+}

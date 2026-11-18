@@ -1,0 +1,47 @@
+{
+  "status": {
+    "notesReady": "Notes ready",
+    "summarizing": "Summarizing…",
+    "notesFailed": "Notes failed",
+    "noNotes": "No notes",
+    "transcriptOnly": "Transcript only"
+  },
+  "list": {
+    "title": "Library",
+    "description": "Your past sessions. Transcripts and notes are stored encrypted on this device.",
+    "refresh": "Refresh",
+    "empty": "No sessions yet. Finish a call to capture a transcript and summary.",
+    "confirmDeleteHint": "Click trash again to permanently delete",
+    "confirmDeleteTitle": "Click again to permanently delete",
+    "confirmDeleteLabel": "Confirm delete session",
+    "delete": "Delete session"
+  },
+  "detail": {
+    "back": "← Library",
+    "untitled": "Session",
+    "rename": "Rename session",
+    "renameSpeaker": "Rename speaker",
+    "tabs": {
+      "summary": "Summary",
+      "transcript": "Transcript"
+    },
+    "messageFailed": "This message failed to send.",
+    "replyFailed": "This reply failed.",
+    "retry": "Retry",
+    "writingSummary": "Your assistant is writing the summary",
+    "summaryFailed": "Couldn't generate the summary.",
+    "thinking": "Thinking…",
+    "placeholder": {
+      "ready": "Refine the action items…",
+      "failed": "Chat unavailable, the summary failed.",
+      "pending": "Chat unlocks once the summary is ready…"
+    },
+    "send": "Send",
+    "noTranscript": "No transcript.",
+    "notFound": "Session not found."
+  },
+  "errors": {
+    "loadChatFailed": "Couldn't load this chat. Try again.",
+    "sendFailed": "Couldn't send that message. Try again."
+  }
+}
