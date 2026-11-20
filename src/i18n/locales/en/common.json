@@ -1,0 +1,27 @@
+{
+  "language": {
+    "label": "Language",
+    "description": "Choose the language StageWhisper uses for its menus and messages. Call insights and summaries follow the language of the call.",
+    "system": "Match my system",
+    "en": "English",
+    "pl": "Polski"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "retry": "Try again",
+    "copy": "Copy",
+    "copied": "Copied",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "continue": "Continue"
+  },
+  "status": {
+    "loading": "Loading…",
+    "saving": "Saving…",
+    "error": "Something went wrong"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "controlBar": {
+    "listen": "Słuchaj",
+    "stop": "Zakończ",
+    "downloadModel": "Pobierz model",
+    "connectAi": "Połącz AI",
+    "toggleVisibility": "Pokaż/ukryj",
+    "openSettings": "Otwórz ustawienia"
+  },
+  "panel": {
+    "audioDropped": "Część dźwięku nie została nagrana podczas wczytywania modelu",
+    "transcript": "Transkrypcja",
+    "copy": "Kopiuj do schowka",
+    "idle": "Naciśnij „Słuchaj”, aby zacząć nagrywać dźwięk",
+    "waiting": "Czekam na dźwięk…"
+  },
+  "speakers": {
+    "you": "Ty",
+    "others": "Rozmówca"
+  },
+  "errors": {
+    "startFailed": "Nie udało się rozpocząć sesji. Spróbuj ponownie.",
+    "localProcessingFailed": "Nie udało się uruchomić przetwarzania lokalnego. Spróbuj ponownie."
+  }
+}
